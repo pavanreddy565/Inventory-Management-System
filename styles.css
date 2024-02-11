@@ -1,0 +1,197 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+  }
+  bar{
+    display: flex;
+  }
+  
+  
+  /* main {
+    display: flex;
+    background-color: red;
+  } */
+  
+  .sidebar {
+    width: fit-content;
+    background-color: #222;
+    color: white;
+    height: 100%;
+    width: 15%;
+    /* padding: 20px; */
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .sidebar ul li a{
+    text-decoration: none;
+    display: block;
+    padding: 16px;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 1rem;
+    }
+  
+  .sidebar ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .sidebar li {
+    margin-bottom: 10px;
+  }
+  .secnod{
+    width: 70%;
+    display: flex;
+    background-color: red;
+  }
+  .analytics-container {
+    flex: 1;
+    /* display: flex; */
+    padding: 20px;
+    
+   
+    
+  }
+  .analytics{
+    display: flex;
+    gap:5%;
+  }
+  .graph-container {
+    flex: 2;
+    padding: 20px;
+  }
+  
+  .graph {
+    height: 300px;
+    border: 1px solid #ccc;
+  }
+  
+  .graph-options {
+    margin-top: 10px;
+  }
+  /* circular bar graph */
+  .circle-progress{
+    /* width: 23%; */
+    background-color: aquamarine;
+  }
+  .progress-info{
+    display: flex; 
+    /* background-color: purple; */
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .skill{
+    /* margin-right: 10px; */
+    /* margin-left: 100px; */
+    width: 160px;
+    height:160px;
+    position: relative;
+    
+    
+    
+    /* background-color: cornflowerblue; */
+}
+
+.outer{
+    height: 185px;
+    width: 185px;
+    border-radius: 50%;
+    border:2px solid red;
+    padding: 16px;
+    /* box-sizing: border-box; */
+    box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
+                -6px -6px 10px -1px rgba(255,255,255,0.7);
+}.inner{
+    height: 180px;
+    width: 180px;
+    border-radius: 50%;
+    border:2px solid red ;   
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 4px 4px 6px -1px rgba(0,0,0,0.2),
+                inset -4px -4px 6px -1px rgba(255,255,255,0.7),
+                -0.5px -0.5px 0px rgba(255,255,255,1),
+                0.5px 0.5px 0px rgba(0,0,0,0.15),
+                0px 12px 10px -10px rgba(0,0,0,0.05);
+}
+circle{
+  fill: none;
+  stroke: black;
+  /* stroke:url(#GradientColor); */
+  stroke-width: 1px;
+  stroke-dasharray: 0;
+  stroke-dashoffset: 0;
+
+}
+div.skill svg{
+  position: absolute;
+  left: 0;
+  top:0;
+}
+/*  circluar bar graph */
+  .recent-activity {
+    flex: 1;
+   
+    padding: 20px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #333;
+    color: white;
+  }
+  
+  .arrow {
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+  }
+  
+  .up {
+    border-bottom: 10px solid green;
+  }
+  
+  .down {
+    border-top: 10px solid red;
+  }
+  
+  /* Media query for mobile */
+  @media screen and (max-width: 768px) {
+    .sidebar {
+      position: fixed;
+      top: 0;
+      left: -250px;
+      height: 100%;
+      z-index: 1000;
+    }
+    .toggle-btn {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      cursor: pointer;
+      font-size: 24px;
+    }
+    .sidebar.active {
+      left: 0;
+    }
+  }
+  
