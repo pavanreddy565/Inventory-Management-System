@@ -1,4 +1,4 @@
-index.html
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,6 +9,7 @@ index.html
 </head>
 <body>
   <bar>
+    <!-- ================================================ 1 ================================================== -->
       <nav class="sidebar" id="sidebar">
         <ul>
           <li><a href="#">Total Shipments</a></li>
@@ -17,11 +18,13 @@ index.html
           <li><a href="#">Delivery Shipments</a></li>
         </ul>
       </nav>
+      <!-- ================================================ 1 ================================================== -->
       <!-- <header>
         <h1>Real-time Shipment Analytics</h1>
       </header> -->
+      <!-- ================================================ 2 ================================================== -->
       <div class="secnod">
-          
+            
             <div class="analytics-container">
               <h2>Real-time Analytics</h2>
               <div class="analytics-bar-wrap">
@@ -58,44 +61,7 @@ index.html
                   </div>
                 </div>
             </div>
-            <div class="circle-progress">
-              <h2>Tracking</h2>
-              <div class="progress-info">
-                <div class="skill">
-                  <div class="outer">
-                      <div class="inner">
-                          <div id="perc">
-                            <p>Delivery</p>
-                            <h1>80%</h1>
-                          </div>
-                      </div>
-                  </div>
-                  <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="300px" height="300px">
-                      <defs>
-                         <linearGradient id="GradientColor">
-                            <stop offset="0%" stop-color="#e91e63" />
-                            <stop offset="100%" stop-color="#673ab7" />
-                         </linearGradient>
-                      </defs>
-                      <circle cx="106" cy="106" r="96" stroke-linecap="round" />
-                  </svg>
-                  <div class="services">
-                    <div class="services_child">
-                       <h3>Tracking Number</h3>
-                       <p>QLCMFV 563041</p>
-                    </div>
-                    <div class="services_child">
-                      <h3>Customer Name</h3>
-                      <p>Debra Andulaya</p>
-                   </div>
-                   <div class="services_child">
-                    <h3>Status</h3>
-                    <p>Approved</p>
-                 </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+            
             <!-- <div class="recent-activity">
               <h2>Recent Activity</h2>
               <table>
@@ -118,7 +84,48 @@ index.html
             </div> -->
           
       </div>
-      
+      <div class="third">
+        <div class="circle-progress">
+          <h2>Tracking</h2>
+          <div class="progress-info">
+            <div class="skill">
+              <div class="outer" id="out">
+                  <div class="inner">
+                      <div id="perc">
+                        <p>Delivery</p>
+                        <h1>80%</h1>
+                      </div>
+                  </div>
+                  <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="300px" height="300px">
+                    <defs>
+                       <linearGradient id="GradientColor">
+                          <stop offset="0%" stop-color="#e91e63" />
+                          <stop offset="100%" stop-color="#673ab7" />
+                       </linearGradient>
+                    </defs>
+                    <circle cx="50%" cy="50%" r="90" stroke-linecap="round" />
+                </svg>
+              </div>
+              
+              
+            </div>
+            <div class="services">
+              <div class="services_child">
+                 <h3>Tracking Number</h3>
+                 <p>QLCMFV 563041</p>
+              </div>
+              <div class="services_child">
+                <h3>Customer Name</h3>
+                <p>Debra Andulaya</p>
+             </div>
+             <div class="services_child">
+              <h3>Status</h3>
+              <p>Approved</p>
+           </div>
+            </div>
+          </div>
+        </div>
+      </div>
   </bar>
   <!-- <footer>
     <p>&copy; 2024 Shipment Analytics</p>
