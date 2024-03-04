@@ -1,135 +1,170 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Shipment Analytics</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    
+    </style>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-  <bar>
-    <!-- ================================================ 1 ================================================== -->
-      <nav class="sidebar" id="sidebar">
-        <ul>
-          <li><a href="#">Total Shipments</a></li>
-          <li><a href="#">Pickup Packages</a></li>
-          <li><a href="#">Pending Shipments</a></li>
-          <li><a href="#">Delivery Shipments</a></li>
-        </ul>
-      </nav>
-      <!-- ================================================ 1 ================================================== -->
-      <!-- <header>
-        <h1>Real-time Shipment Analytics</h1>
-      </header> -->
-      <!-- ================================================ 2 ================================================== -->
-      <div class="secnod">
-            
-            <div class="analytics-container">
-              <h2>Real-time Analytics</h2>
-              <div class="analytics-bar-wrap">
-                <div class="analytics">
-                  <div class="analytics-item">
-                    <h3>Total Shipments</h3>
-                    <span class="shipment-count">100</span>
-                    <div class="arrow up"></div>
-                  </div>
-                  <div class="analytics-item">
-                    <h3>Pickup Packages</h3>
-                    <span class="shipment-count">50</span>
-                    <div class="arrow up"></div>
-                  </div>
-                  <div class="analytics-item">
-                    <h3>Pending Shipments</h3>
-                    <span class="shipment-count">20</span>
-                    <div class="arrow down"></div>
-                  </div>
-                  <div class="analytics-item">
-                    <h3>Delivery Shipments</h3>
-                    <span class="shipment-count">30</span>
-                    <div class="arrow up"></div>
-                  </div>
-                </div>
-              </div>
-                <div class="graph-container">
-                  <h2>Shipment Analytics Graph</h2>
-                  <div class="graph"></div>
-                  <div class="graph-options">
-                    <button id="month-btn">Month</button>
-                    <button id="week-btn">Week</button>
-                    <button id="year-btn">Year</button>
-                  </div>
-                </div>
-            </div>
-            
-            <!-- <div class="recent-activity">
-              <h2>Recent Activity</h2>
-              <table>
-                <thead>
-                  <tr>
-                    <th>Shipment ID</th>
-                    <th>Status</th>
-                    <th>Date</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>1234</td>
-                    <td>Pending</td>
-                    <td>2024-02-08</td>
-                  </tr>
-                  More rows for recent activity 
-                </tbody>
-              </table>
-            </div> -->
-          
-      </div>
-      <div class="third">
-        <div class="circle-progress">
-          <h2>Tracking</h2>
-          <div class="progress-info">
-            <div class="skill">
-              <div class="outer" id="out">
-                  <div class="inner">
-                      <div id="perc">
-                        <p>Delivery</p>
-                        <h1>80%</h1>
-                      </div>
-                  </div>
-                  <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="300px" height="300px">
-                    <defs>
-                       <linearGradient id="GradientColor">
-                          <stop offset="0%" stop-color="#e91e63" />
-                          <stop offset="100%" stop-color="#673ab7" />
-                       </linearGradient>
-                    </defs>
-                    <circle cx="50%" cy="50%" r="90" stroke-linecap="round" />
-                </svg>
-              </div>
-              
-              
-            </div>
-            <div class="services">
-              <div class="services_child">
-                 <h3>Tracking Number</h3>
-                 <p>QLCMFV 563041</p>
-              </div>
-              <div class="services_child">
-                <h3>Customer Name</h3>
-                <p>Debra Andulaya</p>
-             </div>
-             <div class="services_child">
-              <h3>Status</h3>
-              <p>Approved</p>
-           </div>
-            </div>
-          </div>
+    <div class="whole">
+        <div class="first">
+            <nav class="sidebar" id="sidebar">
+                <ul>
+                  <li  class="active"><a href="index.html"><i class="fa-solid fa-house"></i></a></li>
+                  <li><a href="anylatics.html"><i class="fa-solid fa-chart-simple"></i></a></li>
+                  <li><a href="transaction.html"><i class="fa fa-credit-card fa-credit-card-alt"></i></a></li>
+                  <li><a href="wallet.html"><i class="fa-solid fa-wallet"></i></a></li>
+                  <li><a href="recent.html"><i class="fa-solid fa-arrow-down-up-across-line"></i></a></li>
+                  
+                </ul>
+            </nav>
         </div>
-      </div>
-  </bar>
-  <!-- <footer>
-    <p>&copy; 2024 Shipment Analytics</p>
-  </footer> -->
-  <script src="scripts.js"></script>
+        <div class="cont">
+            <header>
+                <div class="heading">
+                    <h1>Good Morning, John</h1>
+                </div>
+                <div class="search">
+                    <div class="search_bar">
+                        <i class="fa fa-search"></i>
+                        <input type="text" placeholder="Search">
+    
+                    </div>
+                    
+                    <i class="fa fa-bell bell" style="font-size:24px;"></i>
+                    <div class="profile-wrap">
+                        <div class="profile"></div>
+                    </div>
+                    
+                </div>
+            </header>
+        <div class="main_con">
+            <div class="second">
+            
+            <div class="shipments">
+                <h2>Shipments</h2>
+                <div class="ship_con">
+                    <div class="shipment_container">
+                        <div class="total_ship">
+                            <h3>120</h3>
+                            <p>Total Shipments</p>
+                            <p style="color: green;">&uarr; +1.2%</p>
+                        </div>
+                        <div class="pickup">
+                            <h3>120</h3>
+                            <p>Total Shipments</p>
+                            <p style="color: green;">&uarr; +1.2%</p>
+                        </div>
+                        <div class="pending">
+                            <h3>120</h3>
+                            <p>Total Shipments</p>
+                            <p style="color: green;">&uarr; +1.2%</p>
+                        </div>
+                        <div class="deilvery">
+                            <h3>120</h3>
+                            <p>Total Shipments</p>
+                            <p style="color: green;">&uarr; +1.2%</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="anylatics"></div>
+            <div class="activity">
+                <h2>Recent Activity</h2>
+                <table>
+                    <tr>
+                        <th>Product</th>
+                        <th>Shipper</th>
+                        <th>Status</th>
+                        <th>Customer</th>
+                        <th>Customer ID</th>
+                    </tr>
+                    
+                    <tr>
+                        <td>#2998-30</td>
+                        <td>JNE</td>
+                        <td style="color: green;">Approved</td>
+                        <td>courtney</td>
+                        <td>LEMDIJ 302030</td>
+                        
+                        
+                    </tr>
+                    <tr>
+                        <td>#1246-87</td>
+                        <td>DHL</td>
+                        <td style="color: red;">Rejected</td>
+                        <td>Esther</td>
+                        <td>LEMDIJ 302030</td>
+                    </tr>
+                    <tr>
+                        <td>#5723-89</td>
+                        <td>RedX</td>
+                        <td style="color: green;">Approved</td>
+                        <td>Mitchell</td>
+                        <td>WRKFMI 858665</td>
+                    </tr>
+                    <tr>
+                        <td>#6478-26</td>
+                        <td>Amazon</td>
+                        <td style="color: green;">Approved</td>
+                        <td>Debra</td>
+                        <td>QLCMFV 563041</td>
+                    </tr>
+                </table>
+            </div>
+            </div>
+            <div class="third">
+           
+            <div class="circle-progress">
+                <h2>Tracking</h2>
+                <div class="progress-info">
+                  <div class="skill">
+                    <div class="outer" id="out">
+                        <div class="inner">
+                            <div id="perc">
+                              <p>Delivery</p>
+                              <h1>80%</h1>
+                            </div>
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="300px" height="300px">
+                          <defs>
+                             <linearGradient id="GradientColor">
+                                <stop offset="0%" stop-color="#e91e63" />
+                                <stop offset="100%" stop-color="#673ab7" />
+                             </linearGradient>
+                          </defs>
+                          <circle cx="50%" cy="50%" r="90" stroke-linecap="round" />
+                      </svg>
+                    </div>
+                    
+                    
+                  </div>
+                  <div class="services">
+                    <div class="services_child">
+                       <h3>Tracking Number</h3>
+                       <p>QLCMFV 563041</p>
+                    </div>
+                    <div class="services_child">
+                      <h3>Customer Name</h3>
+                      <p>Debra Andulaya</p>
+                   </div>
+                   <div class="services_child">
+                    <h3>Status</h3>
+                    <p>Approved</p>
+                 </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    <script type="module" src="scripts.js"></script>
 </body>
 </html>

@@ -26,3 +26,4 @@ window.addEventListener('load', function() {
   // Call the function again if the window is resized
   window.addEventListener('resize', setCircleCenter);
 });
+
