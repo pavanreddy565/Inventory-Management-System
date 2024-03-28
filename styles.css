@@ -254,7 +254,8 @@ td{
 
 }
 .search{
-  width: 95%;
+  width: 30%;
+  /* background-color: red; */
   /* background-color: #989ca3; */
   display: flex;
   margin-bottom: 25px;
